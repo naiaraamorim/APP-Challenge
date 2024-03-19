@@ -1,3 +1,3 @@
-# mobflix
+# APP-Challenge
 
-A new Flutter project.
+Projeto baseado no Mobflix | Alura Challenge
