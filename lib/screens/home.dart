@@ -12,7 +12,11 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Header(),
+      body: Column(
+        children: <Widget>[
+          Header(),
+        ],
+      ),
     );
   }
 }
