@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobflix/components/box_card.dart';
 import 'package:mobflix/components/sections/header.dart';
 
 class Home extends StatefulWidget {
@@ -13,8 +14,12 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Header(),
+          BoxCard(
+            boxContent: Text('Olá mundo'),
+          )
         ],
       ),
     );
