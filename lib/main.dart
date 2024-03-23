@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobflix/screens/home.dart';
+import 'package:mobflix/themes/my_themes.dart';
 
 void main() {
   runApp(const Mobank());
@@ -12,7 +13,7 @@ class Mobank extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Mobank',
-      theme: ThemeData.light(),
+      theme: MyTheme,
       home: Home(),
     );
   }

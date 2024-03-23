@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobflix/themes/theme_colors.dart';
 
 class Header extends StatefulWidget {
   const Header({super.key});
@@ -15,14 +16,7 @@ class _HeaderState extends State<Header> {
         gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: <Color>[
-              Colors.lightGreen,
-              Colors.green,
-
-              // Color.fromRGBO(103, 99, 234, 1),
-              // Color.fromRGBO(155, 105, 254, 1),
-              // Color.fromRGBO(195, 107, 255, 1),
-            ]),
+            colors: ThemeColors.headerGradient),
         //color: Color.fromARGB(255, 77, 141, 69),
         borderRadius: BorderRadius.vertical(bottom: Radius.circular(25)),
       ),
