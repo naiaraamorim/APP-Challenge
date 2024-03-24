@@ -38,7 +38,10 @@ class _HeaderState extends State<Header> {
                     children: <TextSpan>[
                       TextSpan(
                         text: '1000.00',
-                        style: Theme.of(context).textTheme.bodyLarge,
+                        style: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
                       )
                     ],
                   ),
@@ -51,6 +54,7 @@ class _HeaderState extends State<Header> {
             Icon(
               Icons.account_circle,
               size: 50,
+              color: Colors.white,
             )
           ],
         ),

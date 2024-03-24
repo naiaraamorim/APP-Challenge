@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ThemeColors {
-  static const MaterialColor primaryColor = Colors.purple;
+  static const MaterialColor primaryColor = Colors.green;
   static const List<Color> headerGradient = [
     Colors.lightGreen,
     Colors.green,
@@ -10,7 +10,8 @@ class ThemeColors {
     // Color.fromRGBO(195, 107, 255, 1),
   ];
   static const recentActivity = {
-    'spent': Color.fromRGBO(255, 175, 29, 1),
-    'income': Color.fromRGBO(191, 69, 19, 1),
+    'spent': Color.fromRGBO(82, 197, 59, 1),
+    'income': Color.fromRGBO(255, 84, 84, 1),
   };
+  static const division = Color.fromRGBO(166, 166, 166, 1);
 }

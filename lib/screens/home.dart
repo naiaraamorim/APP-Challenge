@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobflix/components/box_card.dart';
-import 'package:mobflix/components/color_dot.dart';
 import 'package:mobflix/components/sections/header.dart';
-import 'package:mobflix/themes/theme_colors.dart';
+import 'package:mobflix/screens/recent_activity.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -14,14 +12,11 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Header(),
-          BoxCard(
-            boxContent: ColorDot(color: ThemeColors.recentActivity['spent']),
-          )
+          RecentActivity(),
         ],
       ),
     );
