@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobflix/components/sections/account_actions.dart';
 import 'package:mobflix/components/sections/header.dart';
 import 'package:mobflix/screens/recent_activity.dart';
 
@@ -15,8 +16,15 @@ class _HomeState extends State<Home> {
     return const Scaffold(
       body: Column(
         children: <Widget>[
-          Header(),
-          RecentActivity(),
+          Padding(
+            padding: EdgeInsets.only(bottom: 10.0),
+            child: Header(),
+          ),
+          Padding(
+            padding: EdgeInsets.only(bottom: 8.0),
+            child: RecentActivity(),
+          ),
+          AccountActions(),
         ],
       ),
     );

@@ -5,7 +5,10 @@ ThemeData MyTheme = ThemeData(
   primarySwatch: ThemeColors.primaryColor,
   primaryColor: ThemeColors.primaryColor,
   textTheme: TextTheme(
-    bodyMedium: TextStyle(fontSize: 18),
-    bodyLarge: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-  ),
+      bodyMedium: TextStyle(fontSize: 18),
+      bodyLarge: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+      titleMedium: TextStyle(
+        fontSize: 20,
+        fontWeight: FontWeight.normal,
+      )),
 );

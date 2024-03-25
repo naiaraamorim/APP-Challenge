@@ -8,8 +8,8 @@ class RecentActivity extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.all(8.0),
+    return const Padding(
+        padding: EdgeInsets.all(8.0),
         child: BoxCard(boxContent: _RecentActivityContent()));
   }
 }
@@ -35,7 +35,7 @@ class _RecentActivityContent extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Entrada'),
+                    const Text('Entrada'),
                     Text(
                       '\$8900.97',
                       style: Theme.of(context).textTheme.bodyLarge,
@@ -55,7 +55,7 @@ class _RecentActivityContent extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Saída'),
+                    const Text('Saída'),
                     Text(
                       '\$2988.97',
                       style: Theme.of(context).textTheme.bodyLarge,
@@ -66,11 +66,11 @@ class _RecentActivityContent extends StatelessWidget {
             ),
           ],
         ),
-        Padding(
-          padding: const EdgeInsets.only(top: 10, bottom: 5),
-          child: Text('Limite de Gastos: \$600.00'),
+        const Padding(
+          padding: EdgeInsets.only(top: 10, bottom: 5),
+          child: Text('Limite de Gastos: \$3800.00'),
         ),
-        LinearProgressIndicator(
+        const LinearProgressIndicator(
           value: 0.5,
           minHeight: 4,
           color: ThemeColors.primaryColor,

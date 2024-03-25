@@ -20,7 +20,7 @@ class _HeaderState extends State<Header> {
         //color: Color.fromARGB(255, 77, 141, 69),
         borderRadius: BorderRadius.vertical(bottom: Radius.circular(25)),
       ),
-      child: Padding(
+      child: const Padding(
         padding: EdgeInsets.fromLTRB(16, 40, 16, 16),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -39,9 +39,9 @@ class _HeaderState extends State<Header> {
                       TextSpan(
                         text: '1000.00',
                         style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
                       )
                     ],
                   ),
@@ -54,7 +54,7 @@ class _HeaderState extends State<Header> {
             Icon(
               Icons.account_circle,
               size: 50,
-              color: Colors.white,
+              color: Colors.white60,
             )
           ],
         ),
